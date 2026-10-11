@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bisan — personal portfolio, projects, experiments and contact.">
+  <meta name="theme-color" content="#070a13">
+  <title>BISAN — Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Bisan home">
+      <span class="brand-mark">B</span>
+      <span>BISAN<span class="dot">.</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Available for cool projects</div>
+        <h1>Building ideas<br><span class="gradient-text">into reality.</span></h1>
+        <p class="hero-text">
+          Hey, I'm <strong>Bisan</strong>. I build websites, experiment with code,
+          explore technology, and turn random ideas into things people can actually use.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore my work <span>↗</span></a>
+          <a href="#contact" class="btn btn-ghost">Let's talk</a>
+        </div>
+
+        <div class="quick-links">
+          <a href="#projects">Projects</a>
+          <span>•</span>
+          <a href="#skills">Skills</a>
+          <span>•</span>
+          <a href="mailto:hello@bisan.fun">hello@bisan.fun</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="terminal">
+          <div class="terminal-top">
+            <div class="traffic"><i></i><i></i><i></i></div>
+            <span>bisan@portfolio:~</span>
+            <span class="terminal-lock">●</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="purple">const</span> <span class="blue">bisan</span> = {</p>
+            <p class="indent"><span class="cyan">name</span>: <span class="green">"Bisan"</span>,</p>
+            <p class="indent"><span class="cyan">focus</span>: [</p>
+            <p class="indent2"><span class="green">"web"</span>, <span class="green">"code"</span>, <span class="green">"ideas"</span></p>
+            <p class="indent">],</p>
+            <p class="indent"><span class="cyan">status</span>: <span class="green">"building..."</span></p>
+            <p>};</p>
+            <p class="cursor-line"><span class="purple">await</span> buildSomethingCool();<span class="cursor"></span></p>
+          </div>
+        </div>
+        <div class="floating-card card-top"><b>CREATE</b></div>
+        <div class="floating-card card-bottom"><span>∞</span><b>LEARN</b></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="interests">
+      <div class="marquee-track">
+        <span>WEB DEVELOPMENT</span><b>✦</b><span>CREATIVE CODE</span><b>✦</b>
+        <span>GAMING</span><b>✦</b><span>TECH</span><b>✦</b>
+        <span>WEB DEVELOPMENT</span><b>✦</b><span>CREATIVE CODE</span><b>✦</b>
+        <span>GAMING</span><b>✦</b><span>TECH</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <span class="section-number"></span>
+        <h2>About <span>me.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="large">Curious mind. Constant learner. Builder at heart.</p>
+          <p>
+            I like understanding how things work, breaking ideas apart, and putting
+            them back together in a better way. From websites and UI experiments to
+            little coding projects, this space is where I keep track of what I'm making.
+          </p>
+          <p>
+            I'm always learning something new — and the next project is usually
+            already somewhere in my head.
+          </p>
+        </div>
+        <div class="about-stats reveal delay-1">
+          <div class="stat"><strong>∞</strong><span>Ideas to explore</span></div>
+          <div class="stat"><strong>24/7</strong><span>Curiosity mode</span></div>
+          <div class="stat"><strong>01</strong><span>Goal: keep building</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-number"></span>
+        <h2>Selected <span>projects.</span></h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-glow"></div>
+          <div class="project-top"><span>WEB / UI</span></div>
+          <div class="project-icon">&lt;/&gt;</div>
+          <h3>Personal Portfolio</h3>
+          <p>A fast, responsive portfolio built from scratch with HTML, CSS and JavaScript.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <a href="#contact" class="project-link">View project <span>↗</span></a>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-top"><span>AI / UI</span></div>
+          <div class="project-icon">✦</div>
+          <h3>Friday AI Concept</h3>
+          <p>A futuristic assistant interface concept with glassmorphism, particles and smooth motion.</p>
+          <div class="tags"><span>React</span><span>UI</span><span>AI</span></div>
+          <a href="#contact" class="project-link">View project <span>↗</span></a>
+        </article>
+
+        <article class="project-card reveal delay-2">
+          <div class="project-top"><span>EXPERIMENT</span></div>
+          <div class="project-icon">◈</div>
+          <h3>Creative Experiments</h3>
+          <p>A collection of small experiments, animations and interactive ideas made while learning.</p>
+          <div class="tags"><span>JavaScript</span><span>Canvas</span><span>CSS</span></div>
+          <a href="#contact" class="project-link">View project <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-number"></span>
+        <h2>Things I <span>use.</span></h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skill-copy reveal">
+          <p class="large">Tools are just tools. The fun part is what you make with them.</p>
+          <p>I enjoy working across design and code, learning by building and improving projects one step at a time.</p>
+        </div>
+        <div class="skill-list reveal delay-1">
+          <div class="skill"><span>01</span><div><b>HTML</b><small>Structure & accessibility</small></div><strong>↗</strong></div>
+          <div class="skill"><span>02</span><div><b>CSS</b><small>Responsive UI & animation</small></div><strong>↗</strong></div>
+          <div class="skill"><span>03</span><div><b>JavaScript</b><small>Interaction & logic</small></div><strong>↗</strong></div>
+          <div class="skill"><span>04</span><div><b>Python</b><small>Experiments & projects</small></div><strong>↗</strong></div>
+          <div class="skill"><span>05</span><div><b>Git / GitHub</b><small>Version control</small></div><strong>↗</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <div class="section-number"> CONTACT</div>
+        <h2>Have an idea?<br><span>Let's build it.</span></h2>
+        <p>For projects, collaborations, questions, or just saying hi.</p>
+        <a class="email-link" href="mailto:hello@bisan.fun">hello@bisan.fun <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span> <span id="year"></span> Bisan. Built with curiosity.</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
